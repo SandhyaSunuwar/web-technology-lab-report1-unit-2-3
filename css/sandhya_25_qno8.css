@@ -1,0 +1,37 @@
+/* Container bar */
+.navbar {
+    background-color: yellow; /* Mustard yellow background */
+    padding: 10px;
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base style for all links (Transparent background) */
+.navbar li a {
+    text-decoration: none;
+    color: #444; /* Dark text for non-active links */
+    font-family: sans-serif;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+/* Vertical Slashes */
+.navbar li:not(:last-child)::after {
+    content: "|";
+    color: #444;
+    margin: 0 5px;
+}
+
+/* HIGH-LIGHT ONLY THE ACTIVE LINK (HOME) */
+.navbar li a.active {
+    background-color: #3b71ca; /* Blue background */
+    color: white;              /* White text */
+    border-radius: 2px;
+}

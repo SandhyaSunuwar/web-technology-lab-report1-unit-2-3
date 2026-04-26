@@ -1,0 +1,193 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.invoice-container {
+    max-width: 850px;
+    margin: auto;
+    background: #fff;
+    padding: 0; 
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.19);
+}
+
+/* Accent Bars */
+.top-bar, .bottom-bar {
+    background-color: orange;
+    height: 15px;
+    width: 100%;
+}
+
+/* Header Sections */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+}
+
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    background: #666;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-right: 15px;
+}
+
+.company-details h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.company-details p {
+    font-size: 12px;
+    margin: 2px 0;
+    color: #555;
+}
+
+.invoice-meta {
+    text-align: right;
+    width: 200px;
+}
+
+.invoice-title {
+    font-size: 28px;
+    color: #777;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+.meta-field {
+    margin-top: 15px;
+}
+
+.meta-field .label {
+    font-size: 11px;
+    font-weight: bold;
+    color: #3b5998; 
+    display: block;
+}
+
+.meta-field .line {
+    border-bottom: 1px solid #ccc;
+    height: 15px;
+}
+
+/* Address & Terms */
+.payment-terms {
+    text-align: right;
+    padding: 10px 40px;
+    font-size: 11px;
+}
+
+.address-section {
+    display: flex;
+    padding: 10px 40px 30px;
+}
+
+.bill-to, .ship-to {
+    flex: 1;
+}
+
+.address-section h3 {
+    font-size: 12px;
+    color: #3b5998;
+    border-bottom: 1px solid #ddd;
+    margin-right: 40px;
+    padding-bottom: 5px;
+}
+
+.address-section p {
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+/* Table Design */
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.items-table th {
+    background-color: #e65c2a;
+    color: white;
+    font-size: 12px;
+    padding: 8px 15px;
+    text-align: left;
+}
+
+.items-table td {
+    padding: 10px 15px;
+    border: 2px solid gray;
+    height: 25px; 
+}
+
+.items-table tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+/* Footer & Totals */
+.footer-section {
+    display: flex;
+    padding: 20px 40px 60px;
+}
+
+.remarks {
+    flex: 1.5;
+    font-size: 12px;
+}
+
+.totals {
+    flex: 1;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.balance-due {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.balance-label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.balance-box {
+    background-color: #f2d7d5; /* Light pink/red background */
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    min-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.text-right { text-align: right; }

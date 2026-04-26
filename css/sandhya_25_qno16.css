@@ -1,0 +1,60 @@
+/* --- 1. Mobile First Styles (Default) --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header { background: #ff7675; padding: 20px; }
+.main   { background: #ffffff; padding: 40px; border: 1px solid #ddd; }
+.left   { background: yellow; padding: 20px; }
+.right  { background: yellowgreen; padding: 20px; color: white; } /* Using a darker red for visibility */
+.footer { background: skyblue; padding: 20px; }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 2. Tablet Styles (Width > 600px) --- */
+@media (min-width: 700px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .main {
+        flex: 0 0 100%; 
+    }
+    
+    .left, .right {
+        flex: 1; /* Left and Right sit side-by-side */
+        color: black;
+        min-height: 200px;
+    }
+}
+
+/* --- 3. Desktop Styles (Width > 900px) --- */
+@media (min-width: 900px) {
+    .container {
+        flex-wrap: nowrap; 
+    }
+
+    .main {
+        flex: 1;      /* Main takes up the remaining center space */
+        order: 2;     /* Moves Main to the middle */
+    }
+
+    .left {
+        flex: 0 0 20%; /* Sidebar width */
+        order: 1;      /* Moves Left to the start */
+        background-color: yellow;
+    }
+
+    .right {
+        flex: 0 0 20%; /* Sidebar width */
+        order: 3;      /* Moves Right to the end */
+        background-color:yellowgreen;
+    }
+}

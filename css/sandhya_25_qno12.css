@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    height: 60px;
+    background: #113c5a; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #9cd9ff;
+}
+
+/* Hide Checkbox and Label on Desktop */
+#click, .menu-btn {
+    display: none;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 850px) {
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .menu-btn {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px solid #fff;
+        padding: 5px 10px;
+    }
+
+    /* Transform UL into a Sidebar */
+    .navbar ul {
+        position: fixed;
+        top: 60px;
+        left: -100%; /* Hide off-screen */
+        background: #113c5a;
+        height: 100vh;
+        width: 250px; /* Width of sidebar */
+        display: block;
+        transition: all 0.3s ease;
+        border-right: 1px solid #1a567e;
+    }
+
+    /* Show menu when checkbox is checked */
+    #click:checked ~ ul {
+        left: 0;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        margin: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .navbar ul li a {
+        width: 100%;
+        display: block;
+        padding-left: 30px;
+        font-size: 16px;
+    }
+}

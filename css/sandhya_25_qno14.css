@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#header {
+    background-color: #5b5b8a;
+    height: 80px;
+    text-align: center;
+}
+
+#menu {
+    background-color: #8a9b8a;
+    height: 30px;
+}
+
+
+#left {
+    background-color: #a65252;
+    width: 25%;
+    height: 400px;
+    float: left;
+}
+
+#Content { 
+    background-color: #00b0ff;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+#right {
+    background-color: #8a7cff;
+    width: 25%;
+    height: 400px;
+    float: left;
+}
+
+#footer {
+    background-color: #808080;
+    height: 40px;
+    clear: both; 
+}
